@@ -1,0 +1,168 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+    <ScrollView
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select the apropriate answers"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q1: What is Manifest.xml in android?"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It has information about layout in an application"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/radio_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It has the information about activities in an application"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/radio_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It has all the information about an application"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/radio_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None of the above"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q2:Whar are the different views in android ?"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+            <CheckBox
+                android:id="@+id/checkbox_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <CheckBox
+                android:id="@+id/checkbox_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ImageView"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <CheckBox
+                android:id="@+id/checkbox_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EditView"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <CheckBox
+                android:id="@+id/checkbox_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PictureView"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q3:What is the full form of UI ?"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/edit_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your answer here"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q4: What is sleep mode in android?"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radio1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Only Radio interface layer and alarm are in active mode"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/radio1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Switched off"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/radio1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Air plane mode"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/radio1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None of the above"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_margin="5dp"
+                    android:onClick="onsubmit"/>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:layout_margin="5dp"
+                    android:onClick="onreset"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

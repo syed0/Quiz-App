@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/quiz_logo" />
+    <TextView
+        android:id="@+id/quiz_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Welcome to the Quiz"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textColor="#000000"
+
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@+id/quiz_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topic:Android"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="131dp"
+        android:text="To The Quiz"
+        android:textColor="#000000" />
+
+</RelativeLayout>
